@@ -64,8 +64,8 @@ TARGET = minimal_qt_window
 
 # List of all C++ source files in the project
 # Currently main.cpp, customwindow.cpp, and circle.cpp, but you can add more files here
-# Example: SOURCES = main.cpp window.cpp dialog.cpp circle.cpp
-SOURCES = main.cpp customwindow.cpp circle.cpp
+# Example: SOURCES = main.cpp window.cpp dialog.cpp 
+SOURCES = main.cpp customwindow.cpp
 
 # Object files that will be created from source files
 # This automatically converts .cpp files to .o files
