@@ -16,11 +16,14 @@
  */
 CustomWindow::CustomWindow() {
     // Set the window title
-    setWindowTitle("Minimal Qt Window - OOP Version");
+    setWindowTitle("Dan's QT Window");
     
     // Set the window size to 600x400 pixels
     setFixedSize(600, 400);
     
+    //Set the window background properties
+    setStyleSheet("QMainWindow { background-color: rgb(219, 219, 223); }");
+   
     // Additional window setup can be added here
     // For example: setWindowIcon(), setStatusBar(), etc.
 }
