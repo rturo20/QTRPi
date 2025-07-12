@@ -8,16 +8,17 @@
 #ifndef CUSTOMWINDOW_H
 #define CUSTOMWINDOW_H
 
-#include <QMainWindow>  // Full include needed for inheritance
+#include <QWidget>  // Full include needed for inheritance
+#include <QPainter>
+#include <QApplication>
 
 /**
  * CustomWindow Class
  * 
- * A custom window class that inherits from QMainWindow.
- * This allows us to encapsulate all window-specific functionality
- * and makes the code more organized and extensible.
+ * A custom window class that inherits from QWidget.
+ * This allows us to override paintEvent to draw circles on the screen.
  */
-class CustomWindow : public QMainWindow {
+class CustomWindow : public QWidget {
 public:
     /**
      * Constructor
@@ -39,6 +40,12 @@ public:
      * Initialize and show the window
      */
     void initializeAndShow();
+    
+    /**
+     * Paint event - called when the window needs to be redrawn
+     * This is where we draw our circles
+     */
+    void paintEvent(QPaintEvent* event) override;
     
     // You can add more methods here for additional functionality
     // For example: void setupMenu(), void setupToolbar(), etc.
