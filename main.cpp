@@ -10,11 +10,11 @@
 // Qt core application class - required for any Qt GUI app
 #include <QApplication>
 // Include our custom window class
-#include "customwindow.h"
+#include "mainwindow.h"
 // Include our new Circle class
 #include <iostream>
 
-/**
+/*
  * Main function - Program entry point
  * Creates the Qt application and our custom window
  */
@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
     QApplication app(argc, argv);
     
     // Create our custom window object
-    CustomWindow window;
+    MainWindow window;
     
     // Show the window
     window.initializeAndShow();

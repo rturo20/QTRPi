@@ -1,10 +1,10 @@
 /*
- * CustomWindow.cpp - Implementation file for CustomWindow class
+ * MainWindow.cpp - Implementation file for MainWindow class
  * 
- * This file contains the implementation of the CustomWindow class methods.
+ * This file contains the implementation of the MainWindow class methods.
  */
 
-#include "customwindow.h"
+#include "mainwindow.h"
 // Main window class - provides standard window functionality
 #include <QMainWindow>
 
@@ -14,7 +14,7 @@
  * Initializes the window with default settings.
  * This is where we set up the window's appearance and behavior.
  */
-CustomWindow::CustomWindow() {
+MainWindow::MainWindow() {
     // Set the window title
     setWindowTitle("Dan's QT Window");
     
@@ -34,14 +34,14 @@ CustomWindow::CustomWindow() {
  * Clean up any resources when the window is destroyed.
  * Qt handles most cleanup automatically, but you can add custom cleanup here.
  */
-CustomWindow::~CustomWindow() {
+MainWindow::~MainWindow() {
     // Custom cleanup code can go here if needed
 }
 
 /**
  * Initialize and show the window
  */
-void CustomWindow::initializeAndShow() {
+void MainWindow::initializeAndShow() {
     show();
 }
 

@@ -11,13 +11,13 @@
 #include <QMainWindow>  // Full include needed for inheritance
 
 /**
- * CustomWindow Class
+ * MainWindow Class
  * 
- * A custom window class that inherits from QMainWindow.
+ * A main window class that inherits from QMainWindow.
  * This allows us to encapsulate all window-specific functionality
  * and makes the code more organized and extensible.
  */
-class CustomWindow : public QMainWindow {
+class MainWindow : public QMainWindow {
 public:
     /**
      * Constructor
@@ -25,7 +25,7 @@ public:
      * Initializes the window with default settings.
      * This is where we set up the window's appearance and behavior.
      */
-    CustomWindow();
+    MainWindow();
     
     /**
      * Destructor
@@ -33,7 +33,7 @@ public:
      * Clean up any resources when the window is destroyed.
      * Qt handles most cleanup automatically, but you can add custom cleanup here.
      */
-    ~CustomWindow();
+    ~MainWindow();
     
     /**
      * Initialize and show the window
