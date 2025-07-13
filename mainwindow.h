@@ -1,14 +1,18 @@
 /*
- * CustomWindow.h - Header file for CustomWindow class
+ * MainWindow.h - Header file for MainWindow class
  * 
- * This file contains the declaration of the CustomWindow class
+ * This file contains the declaration of the MainWindow class
  * that inherits from QMainWindow.
  */
 
-#ifndef CUSTOMWINDOW_H
-#define CUSTOMWINDOW_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QMainWindow>  // Full include needed for inheritance
+#include <QVBoxLayout>  // For vertical layout
+#include <QLabel>       // For text display
+#include <QPushButton>  // For button
+#include <QWidget>      // For central widget
 
 /**
  * MainWindow Class
@@ -40,8 +44,23 @@ public:
      */
     void initializeAndShow();
     
+    /**
+     * Setup the splash screen UI
+     */
+    void setupSplashScreen();
+    
+    /**
+     * Handle the begin button click
+     */
+    void onBeginButtonClicked();
+    
+    /**
+     * Handle the cancel button click
+     */
+    void onCancelButtonClicked();
+    
     // You can add more methods here for additional functionality
     // For example: void setupMenu(), void setupToolbar(), etc.
 };
 
-#endif // CUSTOMWINDOW_H 
+#endif // MAINWINDOW_H 
