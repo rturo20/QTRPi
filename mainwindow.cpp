@@ -14,6 +14,7 @@
 #include <QWidget>
 #include <QApplication>
 #include <QPixmap>
+#include "gamewindow.h" // Include our GameWindow class
 
 /**
  * Constructor
@@ -153,14 +154,11 @@ void MainWindow::setupSplashScreen() {
  * Handle the begin button click
  */
 void MainWindow::onBeginButtonClicked() {
-    // Create a new blank window
-    QMainWindow *gameWindow = new QMainWindow();
-    gameWindow->setWindowTitle("Connect 4 - Game");
-    gameWindow->setFixedSize(800, 600);
-    gameWindow->setStyleSheet("QMainWindow { background-color: white; }");
+    // Create a new GameWindow object
+    GameWindow *gameWindow = new GameWindow();
     
-    // Show the new window
-    gameWindow->show();
+    // Show the new game window
+    gameWindow->initializeAndShow();
     
     // Hide the splash screen window
     this->hide();

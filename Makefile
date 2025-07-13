@@ -63,9 +63,9 @@ QT5_LIBS = $(shell pkg-config --libs Qt5Core Qt5Widgets)
 TARGET = minimal_qt_window
 
 # List of all C++ source files in the project
-# Currently main.cpp, customwindow.cpp, and circle.cpp, but you can add more files here
+# Currently main.cpp, mainwindow.cpp, and gamewindow.cpp, but you can add more files here
 # Example: SOURCES = main.cpp window.cpp dialog.cpp 
-SOURCES = main.cpp mainwindow.cpp 
+SOURCES = main.cpp mainwindow.cpp gamewindow.cpp 
 
 # Object files that will be created from source files
 # This automatically converts .cpp files to .o files

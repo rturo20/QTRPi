@@ -13,6 +13,7 @@
 #include <QLabel>       // For text display
 #include <QPushButton>  // For button
 #include <QWidget>      // For central widget
+#include "gamewindow.h" // Include our GameWindow class
 
 /**
  * MainWindow Class
